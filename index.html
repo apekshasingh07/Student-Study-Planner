@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Study-Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     
+     <h1>Student Study Planner</h1>
+
+     <p>Plan your studies. Track your progress.</p>
+
+     <div class=" dashboard">
+          <div class="stat-card">
+              <h3>Total Tasks</h3>
+              <p id="totalTasks">0</p>
+          </div>
+
+          <div class="stat-card">
+               <h3>Completed</h3>
+               <p id="completedTasks">0</p>
+          </div>
+          
+          <div class="stat-card">
+               <h3>Pending</h3>
+               <p id="pendingTasks">0</p>
+          </div>
+
+     </div>
+
+     <div class="progress-section">
+        <h3>My Study Progress</h3>
+
+        <div class=""progress-bar">
+            <div id="progressFill"></div>
+        </div>  
+        <p id="progressText">0% Completed</p>
+     </div>
+          
+     <h2>My Subjects</h2>
+
+     <div class="subject-container"
+     id="subjectContainer">    
+         <div class="subject-card">
+            <h3>Programming</h3>
+            <p>Learn coding and practice problems.</p>
+         </div>
+
+         <div class="subject-card">
+            <h3>Mathematics</h3>
+            <p>Practice formulas and problems.</p>
+         </div>
+
+         <div class="subject-card">
+            <h3>Digital Electronics</h3>
+            <p>Study logic gates and circuits.</p>
+         </div>
+
+     </div>
+
+     <div class="subject-input">
+        <input
+            type="text" 
+            id="subjectInput"
+            placeholder="Enter a new subject">
+
+        <button id="addSubjectButton">Add Subject</button>
+     </div>
+
+     <h2>My Study Tasks</h2>
+
+     <div class="task-card">
+          
+        <input
+            type="text" 
+            id="taskInput"
+            placeholder="Enter a study task">
+        
+        <select id="taskSubject">
+            <option value="">Select a subject</option>
+
+        </select>
+
+        <input
+            type="date"
+            id="taskDate">    
+
+        <button id="addTaskButton">Add Task</button>
+
+        <ul id="taskList"></ul>
+           
+     </div>
+
+     <!-- JavaScript connection goes here-->
+
+     <script src="script.js"></script>
+
+</body>
+</html>

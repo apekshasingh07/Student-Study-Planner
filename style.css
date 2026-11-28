@@ -1,0 +1,132 @@
+body {
+    background-color: #f3efff;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    color: #30264d;
+}
+
+h1 {
+    color: #7054a8;
+    text-align: center;
+    font-size: 36px;
+}
+
+p {
+    text-align:center
+    font-size: 18px;  
+}
+
+h2 {
+    color: #7054a8;
+    margin-top: 35px;
+}
+
+.subject-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.subject-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.subject-card h3 {
+    color: #7054a8;
+}
+
+.subject-card p {
+    font-size: 14px;
+}
+
+.task-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 15px;
+}   
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.stat-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    min-width: 140px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.stat-card h3 {
+    color: #7054a8;
+}
+
+.stat-card p {
+    font-size: 28px;
+    front-weight: bold;
+}
+
+.progress-section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.progress-bar {
+    background-color: #e5def5;
+    height: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressFill {
+    background-color: #8062b5;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+.task-card input,
+.task-card select {
+    padding: 12px;
+    border: 1px solid #d5c9eb;
+    border-radius: 8px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.task-card button {
+    background-color: #7054a8;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#taskList li {
+    background-color: #f3efff;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#taskList small {
+    color: #7054a8;
+}
